@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHrデイサービスセンター Re LIFE｜脳卒中・循環器リハビリ専門の半日型デイサービス</title>
+<meta name="description" content="大阪市東成区の半日型リハビリデイサービス。理学療法士常駐で脳卒中・循環器疾患に特化。歩行訓練・個別機能訓練で在宅生活を支援します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lp">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">
+      <img src="素材/ロゴ/logo_chr_relife.jpg" alt="Re LIFE ロゴ" class="site-header__logo-img">
+      <div>
+        <div class="site-header__sub">CHrデイサービスセンター</div>
+        <div class="site-header__name">Re LIFE</div>
+      </div>
+    </a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- NAV DRAWER -->
+  <nav class="nav-drawer" id="navDrawer">
+    <button class="nav-drawer__close" onclick="toggleMenu()" aria-label="閉じる">✕</button>
+    <ul>
+      <li><a href="index.html" class="current">トップ</a></li>
+      <li><a href="about.html">Re LIFEについて</a></li>
+      <li><a href="nosotchu-reha.html">脳卒中リハビリ</a></li>
+      <li><a href="junkanki-reha.html">循環器リハビリ</a></li>
+      <li><a href="facility.html">施設紹介</a></li>
+      <li><a href="staff.html">スタッフ紹介</a></li>
+      <li><a href="flow.html">ご利用の流れ</a></li>
+      <li><a href="faq.html">よくある質問</a></li>
+      <li><a href="access.html">アクセス</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="recruit.html">求人情報</a></li>
+    </ul>
+    <a href="tel:0667209887" class="nav-drawer__tel">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="#5f9b2e" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+      06-6720-9887
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section style="position:relative;">
+    <div style="position:relative;width:100%;height:300px;overflow:hidden;">
+      <div class="img-ph">施設・リハビリ写真</div>
+      <svg viewBox="0 0 430 46" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-1px;width:100%;height:46px;display:block;" aria-hidden="true">
+        <path d="M0,46 L0,20 C90,46 150,6 250,14 C330,20 380,42 430,30 L430,46 Z" fill="#f4efe3"></path>
+      </svg>
+    </div>
+    <div style="padding:6px 22px 4px;">
+      <h1 style="font-size:40px;font-weight:900;line-height:1.28;letter-spacing:.5px;">もう一度、<br>自分らしく<span style="color:var(--green);">歩く</span>。</h1>
+      <p style="margin-top:16px;font-size:14.5px;line-height:1.85;color:var(--text-body);font-weight:500;">脳卒中・循環器疾患に特化した<br>理学療法士常駐の半日型リハビリデイサービス</p>
+    </div>
+    <div style="padding:18px 22px 6px;">
+      <a href="tel:0667209887" class="btn-tel">
+        <span class="btn-tel__icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#fff" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+        </span>
+        <span>電話で問い合わせ: 06-6720-9887</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section style="padding:26px 18px 8px;">
+    <h2 class="section-heading">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="var(--green-light)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+      Re LIFE の <span style="color:var(--green);">6つの強み</span>
+    </h2>
+    <div class="strength-grid">
+      <div class="strength-card">
+        <img src="素材/アイコン/1_rigakuryoho.png" alt="" width="40" height="40">
+        <div class="strength-card__label">理学療法士<br>常駐</div>
+      </div>
+      <div class="strength-card">
+        <img src="素材/アイコン/2_nosotchu.png" alt="" width="40" height="40">
+        <div class="strength-card__label">脳卒中<br>リハビリ</div>
+      </div>
+      <div class="strength-card">
+        <img src="素材/アイコン/3_junkanki.png" alt="" width="40" height="40">
+        <div class="strength-card__label">循環器<br>リハビリ</div>
+      </div>
+      <div class="strength-card">
+        <img src="素材/アイコン/4_han-nichigata.png" alt="" width="40" height="40">
+        <div class="strength-card__label">半日型リハビリ<br>特化</div>
+      </div>
+      <div class="strength-card">
+        <img src="素材/アイコン/5_kobetsu.png" alt="" width="40" height="40">
+        <div class="strength-card__label">個別<br>機能訓練</div>
+      </div>
+      <div class="strength-card">
+        <img src="素材/アイコン/6_hokokunren.png" alt="" width="40" height="40">
+        <div class="strength-card__label">歩行訓練に<br>強い</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section style="padding:14px 18px;">
+    <div class="card" style="padding:18px;display:flex;align-items:center;gap:14px;">
+      <div style="flex:1;">
+        <h3 style="font-size:16px;font-weight:900;color:var(--green-dark);margin-bottom:7px;">Re LIFE の日常を配信中！</h3>
+        <p style="font-size:12.5px;line-height:1.65;color:var(--text-body);">活動の様子やお知らせを<br>Instagramでチェック！</p>
+      </div>
+      <div style="text-align:center;flex:none;">
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:7px;">
+          <a href="https://www.instagram.com/relifeup2025" target="_blank" rel="noopener noreferrer" aria-label="Instagram @relifeup2025">
+            <svg viewBox="0 0 24 24" width="34" height="34">
+              <defs><radialGradient id="ig" cx="30%" cy="107%" r="135%"><stop offset="0%" stop-color="#fdf497"></stop><stop offset="5%" stop-color="#fdf497"></stop><stop offset="45%" stop-color="#fd5949"></stop><stop offset="60%" stop-color="#d6249f"></stop><stop offset="90%" stop-color="#285AEB"></stop></radialGradient></defs>
+              <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#ig)"></rect>
+              <circle cx="12" cy="12" r="4.6" fill="none" stroke="#fff" stroke-width="1.8"></circle>
+              <circle cx="17.4" cy="6.6" r="1.3" fill="#fff"></circle>
+            </svg>
+          </a>
+          <!-- QRコードをここに差し替え -->
+          <div style="width:62px;height:62px;border:1px solid var(--card-border);border-radius:6px;background:#f0ebe0;display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:9px;color:#9a9a8c;text-align:center;line-height:1.4;">QR<br>コード</span>
+          </div>
+        </div>
+        <div style="font-size:11px;font-weight:700;color:var(--red);letter-spacing:.3px;">@RELIFEUP2025</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITY -->
+  <section style="padding:8px 18px;">
+    <div class="card" style="padding:18px;display:flex;gap:14px;align-items:center;">
+      <div style="flex:1;">
+        <h3 style="font-size:18px;font-weight:900;color:var(--green);margin-bottom:10px;">施設のご紹介</h3>
+        <p style="font-size:12.5px;line-height:1.7;color:var(--text-body);margin-bottom:14px;">やさしさと専門性が息づく空間で、あなたらしい一歩をサポートします。</p>
+        <a href="facility.html" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:linear-gradient(180deg,var(--green-mid),var(--green-btn));color:#fff;font-size:12.5px;font-weight:700;padding:9px 18px;border-radius:30px;box-shadow:0 4px 10px rgba(90,117,48,.28);">
+          詳しく見る
+          <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+      </div>
+      <!-- 施設写真をここに差し替え -->
+      <div style="width:140px;height:120px;flex:none;border-radius:12px;overflow:hidden;">
+        <div class="img-ph" style="background:linear-gradient(135deg,#d0ddb8,#a0bc70);">施設写真</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO REHAB CARDS -->
+  <section style="padding:10px 18px 8px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+    <a href="nosotchu-reha.html" style="text-decoration:none;color:inherit;" class="card" style="border-radius:16px;overflow:hidden;">
+      <div style="overflow:hidden;border-radius:16px;">
+        <div style="width:100%;height:88px;overflow:hidden;">
+          <div class="img-ph" style="height:88px;background:linear-gradient(135deg,#c8d8a8,#8fb060);">脳卒中写真</div>
+        </div>
+        <div style="padding:12px 12px 14px;position:relative;">
+          <h3 style="font-size:14px;font-weight:900;color:var(--green);margin-bottom:7px;">脳卒中リハビリ</h3>
+          <p style="font-size:11.5px;line-height:1.65;color:var(--text-body);padding-right:18px;">一人ひとりに合わせた専門的なリハビリで、自分らしい生活へ。</p>
+          <span style="position:absolute;right:10px;bottom:12px;width:24px;height:24px;border-radius:50%;background:var(--green-mid);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+    <a href="junkanki-reha.html" style="text-decoration:none;color:inherit;" class="card" style="border-radius:16px;overflow:hidden;">
+      <div style="overflow:hidden;border-radius:16px;">
+        <div style="width:100%;height:88px;overflow:hidden;">
+          <div class="img-ph" style="height:88px;background:linear-gradient(135deg,#e8d0d0,#c07878);">循環器写真</div>
+        </div>
+        <div style="padding:12px 12px 14px;position:relative;">
+          <h3 style="font-size:14px;font-weight:900;color:var(--red);margin-bottom:7px;">循環器リハビリ</h3>
+          <p style="font-size:11.5px;line-height:1.65;color:var(--text-body);padding-right:18px;">心臓病や心不全の再発予防と体力向上を目指します。</p>
+          <span style="position:absolute;right:10px;bottom:12px;width:24px;height:24px;border-radius:50%;background:var(--red-mid);display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+          </span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- FLOW + FAQ -->
+  <section style="padding:18px 18px 6px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;">
+
+    <div>
+      <h2 class="section-heading section-heading--sm">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="var(--green-light)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+        ご利用の流れ
+      </h2>
+      <div class="step-item">
+        <div class="step-circle"><span class="step-circle__label">STEP</span><span class="step-circle__num">1</span></div>
+        <h4 class="step-title">お問い合わせ・ご相談</h4>
+        <p class="step-desc">お電話またはフォームからお気軽にご連絡ください。</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle"><span class="step-circle__label">STEP</span><span class="step-circle__num">2</span></div>
+        <h4 class="step-title">見学・体験利用</h4>
+        <p class="step-desc">施設の見学や体験利用で、雰囲気を確認いただけます。</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle"><span class="step-circle__label">STEP</span><span class="step-circle__num">3</span></div>
+        <h4 class="step-title">ご利用計画のご提案</h4>
+        <p class="step-desc">お身体の状態に合わせたリハビリ計画をご提案します。</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle"><span class="step-circle__label">STEP</span><span class="step-circle__num">4</span></div>
+        <h4 class="step-title">ご利用開始</h4>
+        <p class="step-desc">目標に向かって、一緒にリハビリを始めましょう！</p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="section-heading section-heading--sm">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="var(--green-light)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+        よくある質問
+      </h2>
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span class="faq-btn__q">半日型リハビリとはどのようなサービスですか？</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--green-light)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="faq-a"><p>午前または午後の約3〜4時間、リハビリと機能訓練に集中して取り組むデイサービスです。入浴や食事はなく、運動に特化しています。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span class="faq-btn__q">利用時間や送迎について教えてください。</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--green-light)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="faq-a"><p>営業時間は9:00〜17:00です。ご自宅までの送迎にも対応しておりますので、お気軽にご相談ください。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span class="faq-btn__q">利用料金はいくらですか？</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--green-light)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="faq-a"><p>介護保険の認定区分により異なります。詳しい料金はお問い合わせいただくか、見学時にご説明いたします。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span class="faq-btn__q">どのような服装で行けばよいですか？</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--green-light)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="faq-a"><p>動きやすい服装と運動靴をおすすめしています。着替えのご持参も可能です。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">
+          <span class="faq-btn__q">見学や体験はできますか？</span>
+          <svg class="faq-chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--green-light)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div class="faq-a"><p>はい、見学・体験利用を随時受け付けております。お電話またはフォームよりお申し込みください。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section style="padding:22px 18px 10px;">
+    <h2 style="font-size:19px;font-weight:900;color:var(--green-dark);margin-bottom:14px;">アクセス</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;">
+      <!-- Googleマップ iframeをここに差し替え -->
+      <div style="width:100%;height:140px;border:1px solid var(--card-border);border-radius:12px;overflow:hidden;background:var(--green-pale);display:flex;align-items:center;justify-content:center;">
+        <span style="font-size:11px;color:#7a9a50;text-align:center;line-height:1.6;">Googleマップ<br>埋め込み</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:11px;">
+        <div style="display:flex;gap:8px;font-size:11.5px;line-height:1.55;color:#4a4a42;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="var(--green)" style="flex:none;margin-top:1px;" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"></path></svg>
+          <span>〒537-0014<br>大阪府大阪市東成区<br>大今里西3丁目18-11 1F</span>
+        </div>
+        <a href="tel:0667209887" style="display:flex;gap:8px;align-items:center;text-decoration:none;font-size:16px;font-weight:900;color:var(--green-dark);">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="var(--green)" style="flex:none;" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+          06-6720-9887
+        </a>
+        <div style="display:flex;gap:8px;font-size:11.5px;line-height:1.55;color:#4a4a42;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--green)" stroke-width="2" style="flex:none;margin-top:1px;" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2" stroke-linecap="round"></path></svg>
+          <span>営業時間：9:00〜17:00</span>
+        </div>
+        <div style="display:flex;gap:8px;font-size:11.5px;line-height:1.55;color:#4a4a42;">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--green)" stroke-width="2" style="flex:none;margin-top:1px;" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M3 9h18M8 2v4M16 2v4" stroke-linecap="round"></path></svg>
+          <span>定休日：土曜・日曜・祝日</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section style="padding:18px 18px 26px;">
+    <a href="tel:0667209887" class="cta-bar">
+      <span class="cta-bar__icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+      </span>
+      <div class="cta-bar__text">
+        <small>まずはお気軽にご相談ください</small>
+        <strong>電話で問い合わせ: 06-6720-9887</strong>
+      </div>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__logo">
+      <img src="素材/ロゴ/logo_chr_relife.jpg" alt="Re LIFE ロゴ">
+      <div>
+        <div class="site-footer__sub">CHrデイサービスセンター</div>
+        <div class="site-footer__name">Re LIFE</div>
+      </div>
+    </div>
+    <nav class="site-footer__nav">
+      <a href="index.html">トップ</a>
+      <a href="about.html">Re LIFEについて</a>
+      <a href="nosotchu-reha.html">脳卒中リハビリ</a>
+      <a href="junkanki-reha.html">循環器リハビリ</a>
+      <a href="facility.html">施設紹介</a>
+      <a href="staff.html">スタッフ紹介</a>
+      <a href="flow.html">ご利用の流れ</a>
+      <a href="access.html">アクセス</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="recruit.html">求人情報</a>
+    </nav>
+    <div class="site-footer__info">
+      〒537-0014 大阪府大阪市東成区大今里西3丁目18-11 1F<br>
+      TEL：06-6720-9887 / FAX：06-6720-9888
+      <span class="site-footer__copy">© CHrデイサービスセンター Re LIFE</span>
+    </div>
+  </footer>
+
+</div>
+<script>
+function toggleMenu() {
+  const d = document.getElementById('navDrawer');
+  d.style.display = d.style.display === 'none' ? 'block' : 'none';
+}
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.nextElementSibling;
+    const chev  = btn.querySelector('.faq-chev');
+    const isOpen = panel.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(p => p.classList.remove('open'));
+    document.querySelectorAll('.faq-chev').forEach(c => c.style.transform = 'rotate(0deg)');
+    if (!isOpen) { panel.classList.add('open'); chev.style.transform = 'rotate(180deg)'; }
+  });
+});
+</script>
+</body>
+</html>
