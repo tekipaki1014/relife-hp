@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>循環器リハビリ（心臓リハビリ）｜CHrデイサービスセンター Re LIFE</title>
+<meta name="description" content="心不全・心筋梗塞・狭心症・高血圧など心疾患や生活習慣病に対応した循環器（心臓）リハビリ。バイタルを確認しながら、安全に体力・心肺機能の回復と再発予防を目指します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lp">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="site-header__logo">
+      <img src="素材/ロゴ/logo_chr_relife.jpg" alt="Re LIFE ロゴ" class="site-header__logo-img">
+      <div>
+        <div class="site-header__sub">CHrデイサービスセンター</div>
+        <div class="site-header__name">Re LIFE</div>
+      </div>
+    </a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- NAV DRAWER -->
+  <nav class="nav-drawer" id="navDrawer">
+    <button class="nav-drawer__close" onclick="toggleMenu()" aria-label="閉じる">✕</button>
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="about.html">Re LIFEについて</a></li>
+      <li><a href="nosotchu-reha.html">脳卒中リハビリ</a></li>
+      <li><a href="junkanki-reha.html" class="current">循環器リハビリ</a></li>
+      <li><a href="facility.html">施設紹介</a></li>
+      <li><a href="recruit.html">求人情報</a></li>
+    </ul>
+    <a href="tel:0667209887" class="nav-drawer__tel">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="#5f9b2e" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+      06-6720-9887
+    </a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section style="position:relative;background:#efdedb;overflow:hidden;">
+    <div style="position:absolute;top:0;right:0;width:47%;height:100%;">
+      <!-- リハビリ写真をここに差し替え -->
+      <div class="img-ph" style="background:linear-gradient(160deg,#d8a9a2,#c07168);"></div>
+    </div>
+    <div style="position:relative;z-index:2;padding:30px 22px 56px;max-width:62%;">
+      <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:#a05a52;font-weight:500;margin-bottom:16px;">
+        <a href="index.html" style="color:#a05a52;text-decoration:none;">ホーム</a>
+        <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="var(--red-mid)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+        <span style="color:#8f3f37;">循環器リハビリ</span>
+      </div>
+      <h1 style="font-size:34px;font-weight:900;line-height:1.2;letter-spacing:1px;margin-bottom:14px;color:#3f3f3a;">循環器<br>リハビリ</h1>
+      <p style="font-size:13.5px;line-height:1.8;color:#4a4a42;font-weight:500;">安全に、無理なく、心臓と体を整えるリハビリ。</p>
+    </div>
+    <svg viewBox="0 0 430 40" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-1px;width:100%;height:40px;display:block;z-index:3;" aria-hidden="true">
+      <path d="M0,40 L0,18 C90,40 150,4 250,12 C330,18 380,38 430,26 L430,40 Z" fill="#f4efe3"></path>
+    </svg>
+  </section>
+
+  <!-- INTRO -->
+  <section style="padding:24px 22px 8px;">
+    <p style="font-size:13.5px;line-height:1.95;color:var(--text-body);font-weight:500;margin-bottom:20px;">当施設では、心疾患や生活習慣病をお持ちの方に対し、心臓への負担に配慮した循環器リハビリを提供しています。バイタルを確認しながら、一人ひとりに合わせた安全な運動を行い、日常生活の維持・改善を目指します。</p>
+    <h2 style="font-size:21px;font-weight:900;line-height:1.45;color:var(--red);letter-spacing:.5px;margin-bottom:14px;">循環器リハビリとは</h2>
+    <p style="font-size:13.5px;line-height:1.95;color:var(--text-body);font-weight:500;">心臓や血管の病気をお持ちの方が、無理なく体力・心肺機能を回復させるための運動プログラムです。専門スタッフが状態を確認しながら行うため、安全に継続できます。</p>
+  </section>
+
+  <!-- 対象となる方 -->
+  <section style="padding:16px 18px;">
+    <div style="background:var(--card-bg);border-radius:20px;padding:22px 20px 24px;box-shadow:0 4px 14px rgba(0,0,0,.05);">
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px;">
+        <span style="width:34px;height:34px;border-radius:50%;background:#a24a41;display:flex;align-items:center;justify-content:center;flex:none;">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>
+        </span>
+        <h3 style="font-size:18px;font-weight:900;color:#8f3f37;">こんな方が対象です</h3>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px dashed #e0cdca;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--red-mid)" stroke-width="2" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:13.5px;font-weight:700;">心不全・心筋梗塞・狭心症の方</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px dashed #e0cdca;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--red-mid)" stroke-width="2" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:13.5px;font-weight:700;">心臓手術後の方</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px dashed #e0cdca;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--red-mid)" stroke-width="2" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:13.5px;font-weight:700;">息切れ・動悸が気になる方</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px dashed #e0cdca;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--red-mid)" stroke-width="2" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:13.5px;font-weight:700;">高血圧・糖尿病などの生活習慣病をお持ちの方</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:11px;padding:10px 0;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--red-mid)" stroke-width="2" style="flex:none;"><circle cx="12" cy="12" r="10"></circle><path d="M8 12.5l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span style="font-size:13.5px;font-weight:700;">体力低下や運動不足が気になる方</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主な内容 -->
+  <section style="padding:18px 18px 6px;">
+    <h2 class="section-heading" style="color:#8f3f37;">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="var(--red-mid)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+      主な内容
+    </h2>
+    <div style="display:flex;flex-wrap:wrap;gap:9px;">
+      <span class="chip chip--red">バイタルチェック（血圧・脈拍・SpO₂）</span>
+      <span class="chip chip--red">有酸素運動（歩行・エルゴメーター）</span>
+      <span class="chip chip--red">筋力トレーニング</span>
+      <span class="chip chip--red">ストレッチ・バランス訓練</span>
+      <span class="chip chip--red">日常生活動作訓練</span>
+    </div>
+  </section>
+
+  <!-- 安全への取り組み -->
+  <section style="padding:20px 18px 6px;">
+    <h2 class="section-heading section-heading--sm" style="color:#8f3f37;">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--red-mid)" aria-hidden="true"><path d="M12 2L4 5v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V5l-8-3z"></path></svg>
+      安全への取り組み
+    </h2>
+    <ul class="feature-list feature-list--red">
+      <li>運動前後の体調確認</li>
+      <li>個別に合わせた負荷設定</li>
+      <li>体調変化時の即時対応</li>
+      <li>スタッフによる見守り体制</li>
+    </ul>
+  </section>
+
+  <!-- 期待できる効果 -->
+  <section style="padding:20px 18px 6px;">
+    <h2 class="section-heading section-heading--sm" style="color:#8f3f37;">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--red-mid)" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8v6h2V3h-8v2h6l-8 8-4-4-8 8z"></path></svg>
+      期待できる効果
+    </h2>
+    <ul class="feature-list feature-list--red">
+      <li>心肺機能の向上</li>
+      <li>息切れの軽減</li>
+      <li>体力・筋力の維持</li>
+      <li>日常生活の安定</li>
+      <li>再発予防</li>
+    </ul>
+  </section>
+
+  <!-- 最後に -->
+  <section style="padding:20px 18px 6px;">
+    <div class="card" style="padding:22px 20px;background:#f6e6e3;border:none;">
+      <p style="font-size:13px;line-height:1.95;color:#8f3f37;font-weight:700;">心臓の病気があっても、正しい運動で身体は改善できます。安心して続けられる環境で、無理のないリハビリをサポートします。</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding:22px 18px 26px;">
+    <a href="tel:0667209887" class="cta-block">
+      <div class="cta-block__label">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="rgba(255,255,255,.85)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+        見学・体験もお電話で受付中
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="rgba(255,255,255,.85)" style="transform:scaleX(-1);" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
+      </div>
+      <div class="cta-block__tel">
+        <span class="cta-block__tel-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+        </span>
+        <span class="cta-block__tel-num">06-6720-9887</span>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+      </div>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__logo">
+      <img src="素材/ロゴ/logo_chr_relife.jpg" alt="Re LIFE ロゴ">
+      <div>
+        <div class="site-footer__sub">CHrデイサービスセンター</div>
+        <div class="site-footer__name">Re LIFE</div>
+      </div>
+    </div>
+    <nav class="site-footer__nav-grid">
+      <a href="index.html">トップ</a>
+      <a href="about.html">Re LIFEについて</a>
+      <a href="nosotchu-reha.html">脳卒中リハビリ</a>
+      <a href="junkanki-reha.html" class="current">循環器リハビリ</a>
+      <a href="facility.html">施設紹介</a>
+      <a href="recruit.html">求人情報</a>
+    </nav>
+    <div class="site-footer__info">
+      〒537-0014 大阪府大阪市東成区大今里西3丁目18-11 1F<br>
+      TEL：06-6720-9887 / FAX：06-6720-9888
+      <span class="site-footer__copy">© CHrデイサービスセンター Re LIFE</span>
+    </div>
+  </footer>
+
+</div>
+<script>
+function toggleMenu() {
+  const d = document.getElementById('navDrawer');
+  d.style.display = d.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+</body>
+</html>
