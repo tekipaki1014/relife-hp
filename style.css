@@ -419,14 +419,6 @@ body {
 }
 .site-footer__sub  { font-size: 8px;  color: #cdd9b4; line-height: 1.1; }
 .site-footer__name { font-size: 17px; font-weight: 900; color: #fff; }
-.site-footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px 14px;
-  font-size: 11px;
-  margin-bottom: 18px;
-}
-.site-footer__nav a { color: #e8eed9; text-decoration: none; }
 .site-footer__nav-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
