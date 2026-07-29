@@ -124,4 +124,70 @@
       }
     });
   });
+
+  const galleryImages = [...document.querySelectorAll('.rehab-gallery__item img')];
+  if (galleryImages.length) {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'gallery-lightbox';
+    lightbox.hidden = true;
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', '写真の拡大表示');
+    lightbox.innerHTML = `
+      <button class="gallery-lightbox__close" type="button" aria-label="拡大表示を閉じる">
+        <span aria-hidden="true">×</span>
+      </button>
+      <img class="gallery-lightbox__image" alt="">
+    `;
+    document.body.append(lightbox);
+
+    const lightboxImage = lightbox.querySelector('.gallery-lightbox__image');
+    const lightboxClose = lightbox.querySelector('.gallery-lightbox__close');
+    let galleryReturnFocus = null;
+
+    const closeLightbox = () => {
+      if (lightbox.hidden) return;
+      lightbox.hidden = true;
+      document.body.classList.remove('lightbox-open');
+      lightboxImage.removeAttribute('src');
+      lightboxImage.alt = '';
+      if (galleryReturnFocus instanceof HTMLElement) galleryReturnFocus.focus();
+      galleryReturnFocus = null;
+    };
+
+    const openLightbox = (image) => {
+      galleryReturnFocus = image;
+      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.alt = image.alt;
+      lightbox.hidden = false;
+      document.body.classList.add('lightbox-open');
+      lightboxClose.focus();
+    };
+
+    galleryImages.forEach((image) => {
+      image.tabIndex = 0;
+      image.setAttribute('role', 'button');
+      image.setAttribute('aria-label', `${image.alt || 'ギャラリー写真'}を拡大表示`);
+      image.addEventListener('click', () => openLightbox(image));
+      image.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        openLightbox(image);
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !lightbox.hidden) {
+        event.preventDefault();
+        closeLightbox();
+      } else if (event.key === 'Tab' && !lightbox.hidden) {
+        event.preventDefault();
+        lightboxClose.focus();
+      }
+    });
+  }
 })();
