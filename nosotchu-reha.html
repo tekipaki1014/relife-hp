@@ -64,10 +64,10 @@
 
   <main id="main-content">
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <!-- 写真のトリミングは --hero-photo-x（左右）／--hero-photo-y（上下）で調整。0%＝上端・100%＝下端 -->
+  <section class="page-hero" style="--hero-photo-x:52%;--hero-photo-y:26%;">
     <div class="page-hero__media">
-      <!-- リハビリ写真をここに差し替え -->
-      <div class="img-ph" style="background:linear-gradient(160deg,#b8cfa0,#7aaa54);"></div>
+      <img src="素材/写真/nosotchu_hero_hoko-kunren.jpg" alt="平行棒につかまって歩行訓練をする利用者を、スタッフが体を支えながら介助している様子" width="1400" height="1867" loading="eager" fetchpriority="high" decoding="async">
     </div>
     <div class="page-hero__copy">
       <div class="page-hero__breadcrumb" style="display:flex;align-items:center;gap:7px;font-size:12px;color:#5f7d3a;font-weight:500;margin-bottom:16px;">
@@ -137,6 +137,18 @@
       <span class="chip">上肢・手指の機能訓練</span>
       <span class="chip">日常生活動作訓練</span>
       <span class="chip">福祉用具を使った動作練習</span>
+    </div>
+    <!-- 写真の差し替えは img の src を変えるだけ。トリミング位置は style の --photo-pos（横 縦）で1枚ずつ調整 -->
+    <div class="rehab-gallery" role="group" aria-label="リハビリの様子">
+      <figure class="rehab-gallery__item">
+        <img src="素材/写真/nosotchu_gallery_01_denki-shigeki.jpg" alt="電気刺激装置とロボットグローブを装着して行う手指の機能訓練" style="--photo-pos:50% 50%;" width="1200" height="900" loading="lazy" decoding="async">
+      </figure>
+      <figure class="rehab-gallery__item">
+        <img src="素材/写真/nosotchu_gallery_02_joshi-kunren.jpg" alt="ボール・ビー玉・ハンドグリップ・セラパテなど、上肢と手指の訓練に使う道具" style="--photo-pos:50% 38%;" width="1000" height="1333" loading="lazy" decoding="async">
+      </figure>
+      <figure class="rehab-gallery__item">
+        <img src="素材/写真/nosotchu_hero_hoko-kunren.jpg" alt="平行棒につかまって歩行訓練をする利用者を、スタッフが体を支えながら介助している様子" style="--photo-pos:52% 24%;" width="1400" height="1867" loading="lazy" decoding="async">
+      </figure>
     </div>
   </section>
 
