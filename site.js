@@ -190,4 +190,43 @@
       }
     });
   }
+
+  /* トップのヒーロースライド（クロスフェード自動送り）。
+     枚数はHTML側の .hero-slide の数で決まる。1枚だけなら動かさない。 */
+  document.querySelectorAll('[data-hero-slider]').forEach((slider) => {
+    const slides = [...slider.querySelectorAll('.hero-slide')];
+    if (slides.length < 2) return;
+
+    const interval = Number(slider.dataset.heroInterval) || 5000;
+    let index = slides.findIndex((slide) => slide.classList.contains('is-active'));
+    if (index < 0) index = 0;
+    slides.forEach((slide, i) => slide.classList.toggle('is-active', i === index));
+
+    let timer = null;
+    const showNext = () => {
+      slides[index].classList.remove('is-active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-active');
+    };
+    const start = () => {
+      if (timer !== null || reduceMotion.matches) return;
+      timer = window.setInterval(showNext, interval);
+    };
+    const stop = () => {
+      if (timer === null) return;
+      window.clearInterval(timer);
+      timer = null;
+    };
+
+    // 裏タブで回し続けない（戻ってきたときに一気に飛ばない）。
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stop();
+      else start();
+    });
+    reduceMotion.addEventListener('change', () => {
+      if (reduceMotion.matches) stop();
+      else start();
+    });
+    start();
+  });
 })();
