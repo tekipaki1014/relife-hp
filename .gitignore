@@ -6,6 +6,9 @@
 color-compare.html
 素材/参考イメージ/
 素材/写真/元データ/
+# 千原さんから受領した写真の原本。配信で使うものは 素材/写真/ 直下へ書き出してある。
+# 原本は静的サイトの公開領域に置きたくない（利用者が写っている）ので除外する
+素材/写真/20260812_千原さん受領/
 
 # Claude Code local settings (do not commit)
 .claude/settings.local.json

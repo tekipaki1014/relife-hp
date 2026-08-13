@@ -462,6 +462,50 @@ body {
   object-fit: cover;
 }
 
+/* トップの「脳卒中リハビリ／循環器リハビリ」カードの写真枠（2026-08-13）。
+   以前は 88px（PCのみ180px）の高さ固定だった。599px以下ではカードが1カラム＝全幅になるため、
+   88px だと 4:1 の細長い帯に潰れていた。高さは比率で持たせる。 */
+.home-rehab-card__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.home-rehab-card__media img,
+.home-rehab-card__media .img-ph {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 縦位置は写真ごとに調整する。スマホ＝--thumb-y、PC＝--thumb-y-pc（枠が浅くなるぶん上寄せ） */
+  object-position: var(--thumb-x, 50%) var(--thumb-y, 45%);
+}
+/* PCは2カラムで1枚あたりが広くなる。16:9のままだと写真だけが大きくなりすぎるので浅くする */
+@media (min-width: 960px) {
+  .home-rehab-card__media { aspect-ratio: 2 / 1; }
+  .home-rehab-card__media img {
+    object-position: var(--thumb-x, 50%) var(--thumb-y-pc, 28%);
+  }
+}
+
+/* トップのアクセス欄（2026-08-13）。上のFAQと同じベージュ地で境界が分からなかったため、
+   ここだけ薄緑の帯にした。上下の波形は隣のセクションの背景色（--page-bg）で塗り、
+   帯の内側が薄緑として残る仕組み。padding の上下は波形の高さぶん余分に取っている。 */
+.access-section {
+  position: relative;
+  padding: 54px 18px 46px;
+  background: var(--green-pale);
+}
+.access-section__wave {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  pointer-events: none;
+}
+.access-section__wave--top { top: -1px; }
+.access-section__wave--bottom { bottom: -1px; }
+
 .home-philosophy-card {
   padding: 24px 20px;
   text-align: center;
@@ -761,7 +805,14 @@ body {
   border-top: 1px solid rgba(255,255,255,.15);
   padding-top: 14px;
 }
-.site-footer__copy { display: block; margin-top: 8px; opacity: .8; }
+/* 2026-08-13: 住所・TEL・FAXを外したので、このブロックの中身は著作権表示だけ。
+   以前は住所の下にぶら下げていたぶんの margin-top を落としてある */
+.site-footer__copy { display: block; opacity: .8; }
+
+/* フッター内のCTA（2026-08-13）。960px以上でのみ出す。
+   それ未満は本文末の .final-contact-section が担うので、同じものを2回出さないよう隠しておく。
+   実際の見た目（白カード）は 960px 以上のブロックで定義している。 */
+.site-footer__cta { display: none; }
 
 /* ===================================================
    チップ（主な内容などのタグ）
@@ -980,15 +1031,8 @@ body {
   }
 
   .home-rehab-card__content { padding: 16px 18px 18px !important; }
-  .home-rehab-card > div > div:first-child {
-    height: 180px !important;
-  }
-  .home-rehab-card > div > div:first-child .img-ph,
-  .home-rehab-card > div > div:first-child img {
-    height: 100% !important;
-    width: 100%;
-    object-fit: cover;
-  }
+  /* 写真の高さは .home-rehab-card__media の aspect-ratio が持つ（2026-08-13）。
+     ここで height を固定すると比率指定が効かなくなるため置かない */
   .home-rehab-card__title { font-size: 18px !important; margin-bottom: 9px !important; }
   .home-rehab-card__body {
     padding-right: 46px !important;
@@ -1041,6 +1085,8 @@ body {
   section[aria-labelledby="recruitment-heading"] > h2 { font-size: 28px !important; }
   section[aria-labelledby="recruitment-heading"] > .card h3 { font-size: 23px !important; }
   section[aria-labelledby="recruitment-heading"] > .card ul { font-size: 15.5px !important; line-height: 1.85 !important; }
+  .access-section { padding: 86px 40px 78px; }
+  .access-section__wave { height: 56px; }
   .access-section > h2 { font-size: 25px !important; }
   .access-map > a[style*="font-size"] { font-size: 16px !important; }
   .access-details > div[style*="font-size"] { font-size: 16px !important; line-height: 1.7 !important; }
@@ -1099,11 +1145,82 @@ body {
     padding-left: max(40px, calc((100% - 1040px) / 2 + 40px)) !important;
   }
 
+  /* 左＝ロゴ／ナビ／住所、右＝CTA の2カラム。右側が空いていたのを埋める（2026-08-13） */
   .site-footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 48px;
+    align-items: start;
     padding: 36px max(40px, calc((100% - 1040px) / 2));
   }
-  .site-footer__nav-grid { grid-template-columns: repeat(6, 1fr); gap: 16px; font-size: 13px; }
+  .site-footer__body { min-width: 0; }
+  /* 右にCTAが入って左が約700pxになったため、6列だと「Re LIFEについて」が折り返す。3列2行にする */
+  .site-footer__nav-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 16px; font-size: 13px; }
   .site-footer__info { font-size: 12px; }
+
+  /* CTAは濃緑のフッターの上に白カードで浮かせる。中の文字は本文と同じ緑系にして反転を防ぐ */
+  .site-footer__cta {
+    display: block;
+    padding: 20px 22px 16px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 26px rgba(0,0,0,.24);
+  }
+  .footer-cta__main {
+    display: block;
+    text-decoration: none;
+  }
+  .footer-cta__label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .footer-cta__tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-cta__tel-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--green-mid), var(--green-btn));
+    box-shadow: 0 4px 10px rgba(90,117,48,.3);
+  }
+  .footer-cta__tel-num {
+    color: var(--green-dark);
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    white-space: nowrap;
+  }
+  .footer-cta__line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 13px;
+    border-top: 1px solid var(--card-border);
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .footer-cta__main:hover .footer-cta__tel-num,
+  .footer-cta__line:hover { text-decoration: underline; }
+
+  /* 本文末のCTAはフッターへ移したので、この幅では出さない */
+  .final-contact-section { display: none; }
 }
 
 /* ===================================================
@@ -1500,6 +1617,19 @@ body.menu-open { overflow: hidden; }
 .facility-gallery__media img {
   height: 100% !important;
   object-fit: cover;
+  object-position: 50% 50%;
+}
+/* 写真の下の見出し（2026-08-13）。何の場所か分からない写真があるため文字を添える */
+.facility-gallery__caption {
+  padding: 8px 10px 10px;
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .02em;
+}
+@media (min-width: 600px) {
+  .facility-gallery__caption { padding: 10px 12px 12px; font-size: 14px; }
 }
 
 /* ---------------------------------------------------

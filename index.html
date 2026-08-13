@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -38,10 +38,10 @@
       <!-- ★★ 公開前に必ず差し替え：LINE公式アカウントのURL（千原さん待ち）
            全6ページのヘッダーに同じURLが入っている（index / about / facility / recruit / nosotchu-reha / junkanki-reha）。
            トップの「SNSカード」内のLINEボタンにも同じURLを入れること。 -->
-      <a href="https://lin.ee/PLACEHOLDER" class="site-header__sns" target="_blank" rel="noopener noreferrer" aria-label="LINEで友だち追加">
+      <a href="https://line.me/ti/p/TNzLzJ45UP" class="site-header__sns" target="_blank" rel="noopener noreferrer" aria-label="LINEで友だち追加">
         <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#06C755"></rect><path d="M19.2 11.1c0-3.2-3.2-5.8-7.2-5.8s-7.2 2.6-7.2 5.8c0 2.9 2.6 5.3 6 5.7.24.05.56.16.64.36.07.18.05.46.02.64l-.1.6c-.03.18-.14.7.62.38s4.05-2.39 5.53-4.09c1.02-1.12 1.69-2.26 1.69-3.57z" fill="#fff"></path></svg>
       </a>
-      <a href="https://www.instagram.com/relifeup2025" class="site-header__sns" target="_blank" rel="noopener noreferrer" aria-label="Instagram @relifeup2025">
+      <a href="https://www.instagram.com/relifeup2025?utm_source=qr" class="site-header__sns" target="_blank" rel="noopener noreferrer" aria-label="Instagram @relifeup2025">
         <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
           <defs><radialGradient id="igHeader" cx="30%" cy="107%" r="135%"><stop offset="0%" stop-color="#fdf497"></stop><stop offset="5%" stop-color="#fdf497"></stop><stop offset="45%" stop-color="#fd5949"></stop><stop offset="60%" stop-color="#d6249f"></stop><stop offset="90%" stop-color="#285AEB"></stop></radialGradient></defs>
           <rect x="2" y="2" width="20" height="20" rx="6" fill="url(#igHeader)"></rect>
@@ -81,11 +81,11 @@
   <main id="main-content">
   <!-- HERO（全幅の自動スライド＋コピー重ね） -->
   <!--
-    ★ 4枚とも「仮置き」の写真。既存ページ用に受領済みのものを流用している。
+    ★ 1枚目＝2026-08-12 受領の平行棒歩行訓練（本番写真）。2〜3枚目は既存ページからの仮置き。
        本番用は「写真依頼リスト No.1」＝トップ用の横長写真（候補5〜6枚から3〜4枚を選ぶ）。
        届いたら各 <img> の src を差し替える（装飾扱いなので alt は空のままでよい）。
        ※「トップとギャラリーで同じ写真を使わない」方針があるため、
-         本番写真が届いた時点で 2〜4枚目は必ず差し替えること。
+         本番写真が届いた時点で 2〜3枚目は必ず差し替えること。
     スライドは3枚でも4枚でも動く（不要な .hero-slide を削除するだけ）。
     切替間隔は data-hero-interval（ミリ秒）で変更できる。
   -->
@@ -93,8 +93,8 @@
     <div class="hero-slider" data-hero-slider data-hero-interval="5000">
       <div class="hero-slider__stage">
         <div class="hero-slide is-active">
-          <!-- 仮：脳卒中リハビリの3ショット -->
-          <img src="素材/写真/nosotchu_reha_3shot.jpg" alt="" loading="eager" decoding="async">
+          <!-- 本番：平行棒での歩行訓練（2026-08-12 受領。求人ページのリハビリ助手カードと共用） -->
+          <img src="素材/写真/reha_heiko-bo.jpg" alt="" style="object-position:62% 42%;" loading="eager" fetchpriority="high" decoding="async">
         </div>
         <div class="hero-slide">
           <!-- 仮：トレッドミル（循環器ギャラリーと重複中） -->
@@ -197,7 +197,7 @@
          └ スマホでQRを出しても本人は読み取れないため（2026-08-06 打合せでの決定）
        ★★ 千原さんから届き次第、以下2点を差し替える
          ① QR画像 … 各カードの .home-sns-card__qr の中身を <img src="素材/QR/○○.png" alt=""> に置き換え
-         ② LINEのURL … このセクションのLINEボタン＋全6ページのヘッダー（https://lin.ee/PLACEHOLDER） -->
+         ② LINEのURL … このセクションのLINEボタン＋全6ページのヘッダー（https://line.me/ti/p/TNzLzJ45UP） -->
   <section style="padding:14px 18px;">
     <div class="home-sns-row">
 
@@ -216,7 +216,7 @@
           <p class="home-sns-card__lead">活動の様子やお知らせをInstagramでチェック！</p>
           <div class="home-sns-card__id">@RELIFEUP2025</div>
         </div>
-        <a href="https://www.instagram.com/relifeup2025" class="home-sns-card__action" target="_blank" rel="noopener noreferrer" aria-label="Instagram @relifeup2025">
+        <a href="https://www.instagram.com/relifeup2025?utm_source=qr" class="home-sns-card__action" target="_blank" rel="noopener noreferrer" aria-label="Instagram @relifeup2025">
           <!-- QRコードをここに差し替え（PC・タブレットのみ表示） -->
           <span class="home-sns-card__qr"><span>QR<br>コード</span></span>
           <span class="home-sns-card__tap" aria-hidden="true">
@@ -241,7 +241,7 @@
           <div class="home-sns-card__id home-sns-card__id--line">友だち追加はこちら</div>
         </div>
         <!-- ★★ 公開前に必ず差し替え：LINE公式アカウントのURL -->
-        <a href="https://lin.ee/PLACEHOLDER" class="home-sns-card__action" target="_blank" rel="noopener noreferrer" aria-label="LINEで友だち追加">
+        <a href="https://line.me/ti/p/TNzLzJ45UP" class="home-sns-card__action" target="_blank" rel="noopener noreferrer" aria-label="LINEで友だち追加">
           <!-- QRコードをここに差し替え（PC・タブレットのみ表示） -->
           <span class="home-sns-card__qr"><span>QR<br>コード</span></span>
           <span class="home-sns-card__tap" aria-hidden="true">
@@ -264,9 +264,9 @@
           <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
         </a>
       </div>
-      <!-- 施設写真をここに差し替え -->
+      <!-- 施設写真：外観（2026-08-12 受領） -->
       <div class="home-feature-card__image">
-        <div class="img-ph" style="background:linear-gradient(135deg,#d0ddb8,#a0bc70);">施設写真</div>
+        <img src="素材/写真/facility_exterior.jpg" alt="Re LIFE の建物外観と看板" style="object-position:60% 50%;" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -275,8 +275,9 @@
   <section class="home-rehab-grid" style="padding:10px 18px 8px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
     <a href="nosotchu-reha.html" class="card home-rehab-card" style="text-decoration:none;color:inherit;border-radius:16px;overflow:hidden;">
       <div style="overflow:hidden;border-radius:16px;">
-        <div style="width:100%;height:88px;overflow:hidden;">
-          <div class="img-ph" style="height:88px;background:linear-gradient(135deg,#c8d8a8,#8fb060);">脳卒中写真</div>
+        <!-- サムネは各ページのヒーローと同じ写真を使い、リンク先と見た目を揃えている（意図的な重複） -->
+        <div class="home-rehab-card__media">
+          <img src="素材/写真/nosotchu_hero_hoko-kunren.jpg" alt="" style="--thumb-y:42%;--thumb-y-pc:28%;" loading="lazy" decoding="async">
         </div>
         <div class="home-rehab-card__content" style="padding:12px 12px 14px;position:relative;">
           <h3 class="home-rehab-card__title" style="font-size:14px;font-weight:900;color:var(--green);margin-bottom:7px;">脳卒中リハビリ</h3>
@@ -289,8 +290,8 @@
     </a>
     <a href="junkanki-reha.html" class="card home-rehab-card" style="text-decoration:none;color:inherit;border-radius:16px;overflow:hidden;">
       <div style="overflow:hidden;border-radius:16px;">
-        <div style="width:100%;height:88px;overflow:hidden;">
-          <div class="img-ph" style="height:88px;background:linear-gradient(135deg,#e8d0d0,#c07878);">循環器写真</div>
+        <div class="home-rehab-card__media">
+          <img src="素材/写真/junkanki_gallery_01_upright-ergometer.jpg" alt="" style="--thumb-y:45%;--thumb-y-pc:28%;" loading="lazy" decoding="async">
         </div>
         <div class="home-rehab-card__content" style="padding:12px 12px 14px;position:relative;">
           <h3 class="home-rehab-card__title" style="font-size:14px;font-weight:900;color:var(--red);margin-bottom:7px;">循環器リハビリ</h3>
@@ -376,8 +377,14 @@
     </div>
   </section>
 
-  <!-- ACCESS -->
-  <section class="access-section" style="padding:22px 18px 10px;">
+  <!-- ACCESS
+       2026-08-13: 上の「ご利用の流れ／よくある質問」と同じベージュ地で地続きに見えていたため、
+       ここだけ薄緑の帯にして章の切り替わりを示す。上下の波形はヒーロー下端・各ページの
+       ページヘッダーで使っているものと同じ意匠（塗りは隣り合うセクションの背景色）。 -->
+  <section class="access-section">
+    <svg class="access-section__wave access-section__wave--top" viewBox="0 0 430 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,0 L0,22 C90,0 150,36 250,28 C330,22 380,2 430,14 L430,0 Z" fill="#f4efe3"></path>
+    </svg>
     <h2 style="font-size:19px;font-weight:900;color:var(--green-dark);margin-bottom:14px;">アクセス</h2>
     <div class="access-layout">
     <div class="access-map">
@@ -420,14 +427,15 @@
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="var(--green)" stroke-width="2" style="flex:none;margin-top:1px;" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3.5"></circle></svg>
         <span>対象地域：東成区・生野区・城東区・天王寺区<br>※送迎15分程度の範囲であれば対応可能です。上記以外の地域はご相談ください。</span>
       </div>
-      <!-- 事業所番号が千原さんから届いたら、下のブロックのコメントを外して番号を入れる
       <div style="display:flex;gap:9px;font-size:13px;line-height:1.6;color:#4a4a42;">
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="var(--green)" stroke-width="2" style="flex:none;margin-top:1px;" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h8M8 16h5" stroke-linecap="round"></path></svg>
-        <span>事業所番号：0000000000</span>
+        <span>事業所番号：2791500321</span>
       </div>
-      -->
     </div>
     </div>
+    <svg class="access-section__wave access-section__wave--bottom" viewBox="0 0 430 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 L0,18 C90,40 150,4 250,12 C330,18 380,38 430,26 L430,40 Z" fill="#f4efe3"></path>
+    </svg>
   </section>
 
   <!-- BOTTOM CTA
@@ -451,7 +459,7 @@
         </div>
       </a>
       <!-- ★★ 公開前に必ず差し替え：LINE公式アカウントのURL（600px以上でのみ表示） -->
-      <a href="https://lin.ee/PLACEHOLDER" class="cta-block__line" target="_blank" rel="noopener noreferrer">
+      <a href="https://line.me/ti/p/TNzLzJ45UP" class="cta-block__line" target="_blank" rel="noopener noreferrer">
         <span class="cta-block__line-icon">
           <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#06C755"></rect><path d="M19.2 11.1c0-3.2-3.2-5.8-7.2-5.8s-7.2 2.6-7.2 5.8c0 2.9 2.6 5.3 6 5.7.24.05.56.16.64.36.07.18.05.46.02.64l-.1.6c-.03.18-.14.7.62.38s4.05-2.39 5.53-4.09c1.02-1.12 1.69-2.26 1.69-3.57z" fill="#fff"></path></svg>
         </span>
@@ -461,8 +469,12 @@
   </section>
 
   </main>
-  <!-- FOOTER -->
+  <!-- FOOTER
+       2026-08-13: 960px以上ではフッターを「左＝情報／右＝CTA」の2カラムにした。
+       PCではフッター右側が大きく空いていたため。599〜959pxは従来どおり縦積みで、
+       CTAは本文末（.final-contact-section）が担う。 -->
   <footer class="site-footer">
+    <div class="site-footer__body">
     <div class="site-footer__logo">
       <img src="素材/ロゴ/logo_chr_relife.jpg" alt="Re LIFE ロゴ">
       <div>
@@ -478,12 +490,28 @@
       <a href="facility.html">施設紹介</a>
       <a href="recruit.html">求人情報</a>
     </nav>
+    <!-- 2026-08-13: 住所・TEL・FAXを削除（ユーザー判断）。右側に余白が出るうえ、
+         所在地はトップのアクセス欄、電話はフッター右のCTAが担うため。ここは著作権表示だけ -->
     <div class="site-footer__info">
-      〒537-0014<br>
-      大阪府大阪市東成区大今里西3丁目18-11<br>
-      エストゥルースプラスサウス大阪 1F<br>
-      TEL：06-6720-9887 / FAX：06-6720-9888
       <span class="site-footer__copy">© CHrデイサービスセンター Re LIFE</span>
+    </div>
+    </div>
+    <!-- 960px以上でのみ表示。フッターが濃緑なので白カードで浮かせる -->
+    <div class="site-footer__cta">
+      <a href="tel:0667209887" class="footer-cta__main">
+        <span class="footer-cta__label">見学・体験のお問い合わせはお電話で</span>
+        <span class="footer-cta__tel">
+          <span class="footer-cta__tel-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff" aria-hidden="true"><path d="M6.62 10.79a15.53 15.53 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"></path></svg>
+          </span>
+          <span class="footer-cta__tel-num">06-6720-9887</span>
+        </span>
+      </a>
+      <!-- ★★ 公開前に必ず差し替え：LINE公式アカウントのURL -->
+      <a href="https://line.me/ti/p/TNzLzJ45UP" class="footer-cta__line" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#06C755"></rect><path d="M19.2 11.1c0-3.2-3.2-5.8-7.2-5.8s-7.2 2.6-7.2 5.8c0 2.9 2.6 5.3 6 5.7.24.05.56.16.64.36.07.18.05.46.02.64l-.1.6c-.03.18-.14.7.62.38s4.05-2.39 5.53-4.09c1.02-1.12 1.69-2.26 1.69-3.57z" fill="#fff"></path></svg>
+        LINEでも受付中
+      </a>
     </div>
   </footer>
 
@@ -491,10 +519,11 @@
 <!-- 右下に浮くLINEボタン（スマホ専用／600px以上では非表示）
      ★★ 公開前に必ず差し替え：LINE公式アカウントのURL
      .lp は幅によって overflow:hidden になるため、必ず .lp の外に置くこと -->
-<a href="https://lin.ee/PLACEHOLDER" class="line-fab" target="_blank" rel="noopener noreferrer">
+<a href="https://line.me/ti/p/TNzLzJ45UP" class="line-fab" target="_blank" rel="noopener noreferrer">
   <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 3.6c-4.7 0-8.5 3-8.5 6.8 0 3.4 3 6.2 7.1 6.7.28.06.65.19.75.42.08.21.05.54.03.75l-.12.7c-.04.21-.17.83.73.45s4.8-2.83 6.55-4.84C19.8 12.9 20.5 11.5 20.5 10.4c0-3.8-3.8-6.8-8.5-6.8z" fill="#fff"></path></svg>
   LINE受付中
 </a>
 <script src="site.js"></script>
 </body>
 </html>
+
