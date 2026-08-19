@@ -78,10 +78,11 @@
 
   <main id="main-content">
   <!-- PAGE HERO -->
-  <!-- Bメイン（2026-08-12 千原さん指定）。トリミング位置はCSS変数で調整 -->
-  <section class="page-hero" style="--hero-photo-x:50%;--hero-photo-y:50%;">
+  <!-- 2026-08-20: トップの「施設のご紹介」カードと同じ外観写真に揃えた（ユーザー指示）。
+       もとの訓練スペース全景は Re LIFEについて の最上部へ移設 -->
+  <section class="page-hero" style="--hero-photo-x:60%;--hero-photo-y:50%;">
     <div class="page-hero__media">
-      <img src="素材/写真/facility_hero_kunren-space.jpg" alt="リハビリ機器が並ぶRe LIFEの明るい訓練スペース" width="1477" height="1108" loading="eager" fetchpriority="high" decoding="async">
+      <img src="素材/写真/facility_exterior.jpg" alt="Re LIFE の建物外観と看板" width="1477" height="1108" loading="eager" fetchpriority="high" decoding="async">
     </div>
     <div class="page-hero__copy">
       <div class="page-hero__breadcrumb" style="display:flex;align-items:center;gap:7px;font-size:12px;color:#5f7d3a;font-weight:500;margin-bottom:16px;">
@@ -110,26 +111,31 @@
       <svg viewBox="0 0 24 24" width="18" height="18" fill="var(--green-light)" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"></path></svg>
       施設の <span style="color:var(--green);">様子</span>
     </h2>
-    <!-- 2026-08-13: 受領写真を投入。ヒーローが訓練スペース全景なので、ここは外観・作業スペース・ベッドの3枚。
-         施設に受付カウンター・浴室・個別リハビリ室はない（千原さん確認済み）ため枠自体を設けていない -->
+    <!-- 施設に受付カウンター・浴室・個別リハビリ室はない（千原さん確認済み）ため枠自体を設けていない。
+         2026-08-20: 最上部を外観にしたので、ここは訓練スペース／作業スペース／ベッド／平行棒の4枚。
+         写真の下のキャプションは不要との判断で削除した（写真だけを並べる） -->
     <div class="facility-gallery">
+      <!-- 2026-08-20: 外観は最上部に上がったので、ここは訓練スペース全景に差し替え（同一ページでの重複を避ける） -->
       <div class="card facility-gallery__item" style="border-radius:16px;overflow:hidden;">
         <div class="facility-gallery__media">
-          <img src="素材/写真/facility_exterior.jpg" alt="Re LIFE の建物外観と看板" style="object-position:58% 50%;" loading="lazy" decoding="async">
+          <img src="素材/写真/facility_hero_kunren-space.jpg" alt="リハビリ機器が並ぶRe LIFEの明るい訓練スペース" style="object-position:50% 50%;" loading="lazy" decoding="async">
         </div>
-        <div class="facility-gallery__caption">外観</div>
       </div>
       <div class="card facility-gallery__item" style="border-radius:16px;overflow:hidden;">
         <div class="facility-gallery__media">
           <img src="素材/写真/facility_work-space.jpg" alt="テーブルと椅子が並ぶ作業・リハビリスペース" style="object-position:50% 55%;" loading="lazy" decoding="async">
         </div>
-        <div class="facility-gallery__caption">作業・リハビリスペース</div>
       </div>
       <div class="card facility-gallery__item" style="border-radius:16px;overflow:hidden;">
         <div class="facility-gallery__media">
           <img src="素材/写真/facility_bed.jpg" alt="施術用ベッドと歩行練習用の手すり" style="object-position:50% 50%;" loading="lazy" decoding="async">
         </div>
-        <div class="facility-gallery__caption">ベッド・平行棒</div>
+      </div>
+      <!-- 4枚目：平行棒まわり（2026-08-19 受領 No.08）。PCは4列・スマホは2×2で埋まる -->
+      <div class="card facility-gallery__item" style="border-radius:16px;overflow:hidden;">
+        <div class="facility-gallery__media">
+          <img src="素材/写真/facility_heikobo.jpg" alt="歩行訓練用の平行棒と訓練用階段が並ぶスペース" style="object-position:50% 50%;" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
   </section>

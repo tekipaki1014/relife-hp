@@ -1219,8 +1219,14 @@ body {
   .footer-cta__main:hover .footer-cta__tel-num,
   .footer-cta__line:hover { text-decoration: underline; }
 
-  /* 本文末のCTAはフッターへ移したので、この幅では出さない */
-  .final-contact-section { display: none; }
+  /* 本文末のCTAはフッターへ移したので、この幅では中身を出さない。
+     ただし 2026-08-20 まで display:none で要素ごと消していたため、本文最後のセクション
+     （下 padding が 6〜8px しかない）とフッターの緑帯が詰まって見えていた。
+     中身だけ隠して、フッター手前の余白は残す。 */
+  .final-contact-section {
+    padding: 0 18px 56px !important;
+  }
+  .final-contact-section > * { display: none; }
 }
 
 /* ===================================================
@@ -1619,18 +1625,8 @@ body.menu-open { overflow: hidden; }
   object-fit: cover;
   object-position: 50% 50%;
 }
-/* 写真の下の見出し（2026-08-13）。何の場所か分からない写真があるため文字を添える */
-.facility-gallery__caption {
-  padding: 8px 10px 10px;
-  color: var(--green-dark);
-  font-size: 12px;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: .02em;
-}
-@media (min-width: 600px) {
-  .facility-gallery__caption { padding: 10px 12px 12px; font-size: 14px; }
-}
+/* 2026-08-20: 写真の下のキャプション（.facility-gallery__caption）は不要になったため削除（ユーザー指示）。
+   ギャラリーは写真だけを並べる。 */
 
 /* ---------------------------------------------------
    求人カード：上に写真枠、下に条件テキスト（3職種とも同じ形）
